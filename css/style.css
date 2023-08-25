@@ -1,0 +1,265 @@
+:root{
+    /*declaracao de variaveis*/
+    --cor1 : #473C38;
+    --cor2 : #C2B19C;
+    --cor3 : #F0F1F0;
+    --cor4 : #B2935B;
+    --font1 : 'Playfair Display', serif;
+    --font2 : 'Teko', sans-serif;
+}
+
+
+body{
+    margin: 0; 
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 120%;/*espaco entre linhas*/
+    color: var(--cor1);
+    font-family: var(--font1);    
+}
+
+img{
+    display: block;/* retirar espaco em baixo dasimagens*/
+}
+
+.container{
+    width: 1118px;
+    margin: 0 auto ; /* centraliza a div */
+}
+
+.header{
+     background-color: var(--cor1);
+     padding: 16px 0;
+     width: 100%;
+     position: sticky;/* fixo */
+     top: 0;
+     z-index: 1000; /* quanto maior mais a frente ele estara na frente de qualquer position*/
+}
+
+
+.header .container{
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: var(--cor3);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.menu a:hover{
+    color: var(--cor4);
+}
+
+.hero-section {
+    background-color: var(--cor1);
+    width: 100%;
+    height: 440px;
+    display: flex;   
+}
+
+.hero-section .container h1{
+    margin-top: 80px;
+    font-family: var(--font1);    
+    line-height: 120%;
+    font-size: 60px;
+    color: var(--cor3); 
+    width: 70%;
+}
+
+.hero-section .container p{
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--cor3); 
+    width: 50%;
+  }
+
+ .hero-section .image{
+    position: absolute;
+    top: 242px;
+    right: 242px;
+}
+ 
+.btn{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 11px 60px 7px 60px;
+    border-radius: var(--radios);
+    display: inline-block;
+    border: solid 2px transparent;
+    cursor: pointer;
+}  
+
+.btn:hover{
+    background-color : var(--cor4);
+}
+
+
+.fabrica{
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+
+.fabrica p{
+    width: 70%;     
+}
+
+.cards {
+    background-color: var(--cor3);  
+    padding-bottom: 20PX;  
+}
+
+.cards h2{
+    width: 100%;
+    padding-top: 80px;
+     margin-bottom: 40px;
+    font-family: var(--font1);    
+    line-height: 120%;
+    font-size: 48px;
+    color: var(--cor1);     
+    text-align: center;
+}
+
+
+.planos {
+    text-align: center;
+    margin-top: 100px;  
+}
+
+.flex-cards {
+    display: flex;
+    column-gap: 24px;   
+}
+
+.card {
+    background-color: rgb(253, 253, 253);     
+    padding: 30px 25px;
+    transition: 0.2s; /* isso faz a velocidade do efeito do transform aki do  hover*/
+}
+
+.card:hover{
+   transform: translateY(-10px);/*animacao so funciona se tiver transition*/
+}
+
+.card h3{   
+    color: var(--wite);
+    font-size: 16px;
+    font-family: var(--font1);
+}
+
+.card .btn {
+    display: block;
+    text-align: center;
+
+}
+
+
+.recomendo{
+    padding-top: 40px;
+    text-align: center;
+    color: var(--cor1);
+    font-family: var(--font1);
+    background-color: white;
+    
+}
+
+.recomendo h2{
+    font-size: 40px;  
+}
+
+.recomendo p{
+    font-size: 16px;  
+    padding-bottom: 20px;  
+}
+
+.icon {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;    
+}
+
+
+.formulario {
+    background-color: var(--cor4);
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.questao input, .questao textarea{
+     background-color: white;
+     border: 0px none;
+     padding: 5px;
+     font-size: 12px;
+     color: gray
+}
+
+.questao textarea{
+    height: 10px;
+}
+
+.questao .btn{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px 40px 4px 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.questao .btn:hover{
+    background-color : var(--cor2);
+}
+
+.footer{
+    background-color: var(--cor1);
+    bottom: 0;
+    width: 100%;
+    height: 200px;     
+    box-sizing: border-box;
+    color: var(--wite);
+    line-height: 120%;
+    padding: 30px 25px;
+}
+
+.footer .container{
+    display: flex;
+    column-gap: 24px;   
+}
+
+.footer h3{   
+    padding: 150px,0px,150px,0px;
+
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font1);
+}
+
+.footer p{   
+    padding: 150px,0px,150px,0px;
+    color: white;
+    font-size: 12px;
+    font-family: var(--font1);
+    text-align: justify ;
+}
